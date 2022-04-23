@@ -18,6 +18,7 @@ import TWEENS from '@/router/moudle/TWEENS'
 import ANIMATIONS from '@/router/moudle/ANIMATIONS'
 import EXPORT from '@/router/moudle/EXPORT'
 import PERFORMANCE from '@/router/moudle/PERFORMANCE'
+import DEMO from '@/router/moudle/DEMO'
 
 const routes = [
   {
@@ -37,7 +38,8 @@ const routes = [
       ...TWEENS,
       ...ANIMATIONS,
       ...EXPORT,
-      ...PERFORMANCE
+      ...PERFORMANCE,
+      ...DEMO
     ]
   }
 ]

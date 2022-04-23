@@ -16,7 +16,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'PageAside',
   mixins: [],
@@ -52,10 +51,9 @@ export default {
         {
           name: '定位偏移',
           route: 'guides',
-          childrens: [
-            { name: '定位和偏移', route: 'Position-vs-Offset' }
-          ]
-        }, {
+          childrens: [{ name: '定位和偏移', route: 'Position-vs-Offset' }]
+        },
+        {
           name: '样式变化',
           route: 'styling',
           childrens: [
@@ -68,7 +66,8 @@ export default {
             { name: '鼠标样式', route: 'Mouse-Cursor-Styles' },
             { name: '混合模式', route: 'Blend-Mode' }
           ]
-        }, {
+        },
+        {
           name: '事件监听',
           route: 'events',
           childrens: [
@@ -186,6 +185,11 @@ export default {
             { name: 'Disable-Perfect-Drawing', route: 'Disable-Perfect-Drawing' },
             { name: '节点删除', route: 'Avoid-Memory-Leaks' }
           ]
+        },
+        {
+          name: '实践示例',
+          route: 'DEMO',
+          childrens: [{ name: '生成背景', route: 'GenerateBackground' }]
         }
         // （）
       ]
@@ -198,9 +202,12 @@ export default {
      */
     pageTo(name) {
       console.log(`页面跳转${name}`)
-      const query = Object.assign({}, {
-        t: +new Date()
-      })
+      const query = Object.assign(
+        {},
+        {
+          t: +new Date()
+        }
+      )
       this.$router.push({
         name: name,
         query: query

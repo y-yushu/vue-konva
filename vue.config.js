@@ -9,5 +9,5 @@ module.exports = {
     config.resolve.alias.set('_c', resolve('src/components')) // key,value自行定义，比如.set('@@', resolve('src/components'))
   },
   // 输出文件目录
-  outputDir: 'dist'
+  outputDir: 'docs'
 }

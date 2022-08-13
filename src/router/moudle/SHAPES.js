@@ -2,17 +2,17 @@ export default [
   {
     path: '/Rect',
     name: 'Rect',
-    component: () => import('@/views/shapes/Rect')
+    component: () => import('@/views/shapes/rect')
   },
   {
     path: '/Circle',
     name: 'Circle',
-    component: () => import('@/views/shapes/Circle')
+    component: () => import('@/views/shapes/circle')
   },
   {
     path: '/Ellipse',
     name: 'Ellipse',
-    component: () => import('@/views/shapes/Ellipse')
+    component: () => import('@/views/shapes/ellipse')
   },
   {
     path: '/Wedge',
